@@ -28,7 +28,7 @@
 
             <script>
                 // Set the date we're counting down to
-                var countDownDate = new Date("Jul 13, 2023 14:00:00").getTime();
+                var countDownDate = new Date("Jul 13, 2024 14:00:00").getTime();
                 
                 // Update the count down every 1 second
                 var x = setInterval(function() {
@@ -40,13 +40,13 @@
                   var distance = countDownDate - now;
                     
                   // Time calculations for days, hours, minutes and seconds
-                
-                  var hours = Math.floor(distance  / (1000 * 60 * 60));
+                  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
                   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
                     
                   // Output the result in an element with id="demo"
-                  document.getElementById("demo").innerHTML =  hours + "h "
+                  document.getElementById("demo").innerHTML = days + "days " + hours + "h "
                   + minutes + "m " + seconds + "s ";
                     
                   // If the count down is over, write some text 
@@ -56,11 +56,32 @@
                   }
                 }, 1000);
                           </script>
-                
-                <b>13. Juli - 14:00<br> </b>
+
+
+
+<b>13. Juli - 14:00<br> </b>
               
-                <b>anmeldung <br>
-                +41 78 605 78 18</b>
+<b>anmeldung <br>
++41 78 605 78 18</b>
+
+
+
+<h2>Rekordsieger der Olymbierischenspiele</h2>
+
+<table>
+  <tr>
+    <th>Siege</th>
+    <th>Team</th>
+    <th>Jahre</th>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Lukas & Uhl <br> Team Luhl</td>
+    <td>2022-2034</td>
+  </tr>
+</table>
+                
+
 
         </center>
     </body>
